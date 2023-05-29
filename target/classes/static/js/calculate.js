@@ -5,12 +5,7 @@ var grades = [
   ];
 
  var InputTable = document.getElementById("InputTable");
-  // for(let i; i < gradeTable.length; i++)
-  // {
-  //   gradeTable[i].addEventListener('input', function(event){
-      
-  //   });
-  // }
+
 
   function SubmitInput(){
     var lowerBoundInputs = document.querySelectorAll("#InputTable input[type='text']");
@@ -84,14 +79,6 @@ function generateHistogram() {
 
   // Function to count the number of grades in a specific range
   function countGradesInRange(rangeIndex) {
-    // var lowerBounds = [90, 85, 80, 75, 70, 65, 60, 55, 50, 0];
-    // for (var i = 0; i < grades.length; i++)
-    // {
-    //     if(grades[i]>55 && grades[i]<60 ) 
-    //     {
-    //         console.log(grades[i],rangeIndex)
-    //     }
-    // }
     var lowerBoundInputs = document.querySelectorAll("#InputTable input[type='text']");
     // Extract the lower bounds from the input elements
     var lowerBounds = Array.from(lowerBoundInputs).map(function(input) {
