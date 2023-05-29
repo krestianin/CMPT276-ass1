@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./histogram.css" rel="stylesheet">
+    <title>Assignment 1</title>
+</head>
+<body>
+    <h1 style="text-align:center">Histogram Generator</h1>
+    <div id="gradesContainer"></div>
+    <div class="wrapper" >
+        <div class="one" >
+            <p style ="color:#c30330;font-weight: bold; background-color: #e9eff1; margin-left: 5%;"> Lower bounds</p>
+            <table id="Max">
+
+            </table>
+            <table id="InputTable" >
+                <tr>
+                    <tr>
+                        <td class="column">Max</td>
+                        <td><input type="text" value="100.00" size = "10%;"></td>
+                    </tr>
+                    <td>A+</td>
+                    <td ><input type="text" value="95.00" size = "10%;"></td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td ><input type="text" value="90.00" size = "10%;"></td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td ><input type="text" value="85.00" size = "10%;"></td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td ><input type="text" value="80.00" size = "10%;"></td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td ><input type="text" value="75.00" size = "10%;"></td>
+                </tr>
+                <tr>
+                    <td>B-</td>
+                    <td ><input type="text" value="70.00" size = "10%;"></td>
+                </tr>
+                
+                <tr>
+                    <td>C+</td>
+                    <td ><input type="text" value="65.00" size = "10%;"></td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td ><input type="text" value="60.00"  size = "10%;"></td>
+                </tr>
+                <tr>
+                    <td>C-</td>
+                    <td ><input type="text" value="55.00" size = "10%;"></td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td ><input type="text" value="50.00" size = "10%;"></td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td ><input type="text" value="0.00" size = "10%;"></td>
+                </tr>
+            </table>
+            <button onclick="SubmitInput()" class ="btn" style="margin-left: 10%;">Submit</button>  
+        </div>
+        <div class="histogram">
+            <p style ="color:#c30330;font-weight: bold; margin-left:5%; background-color: #e9eff1;"> Histogram </p>
+            <table id="gradeTable">
+                <tr>
+                    <td>A+</td>
+                    <td  >O</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td >O</td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td >O</td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td >O</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td >O</td>
+                </tr>
+                <tr>
+                    <td>B-</td>
+                    <td >O</td>
+                </tr>
+                
+                <tr>
+                    <td>C+</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td >O</td>
+                </tr>
+                <tr>
+                    <td>C-</td>
+                    <td >O</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td >O</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td >O</td>
+                </tr>
+            </table>
+        </div>
+        <div class="three" >
+        <div style="margin-left: 5%; margin-top: 5%;">    
+            New Grade <input type="text" id="newGradeInput">
+            <br>
+            <button onclick="addNewGrade()" class ="btn">Submit</button>  
+        </div>
+      </div>
+      
+      <script src="./js/calculate.js" defer></script>
+</body>
+</html>
