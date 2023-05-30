@@ -9,6 +9,9 @@ table{
     padding-right: 100%;
     
 }
+div {
+  white-space: normal;
+}
 .wrapper {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -18,6 +21,7 @@ table{
     /* grid-auto-columns: min(200px, auto); */
     font-family: Cambria, Georgia, "Times New Roman", Times, serif;
     text-align: match-parent;
+    position: relative;
   }
   .one {
     border: solid;
