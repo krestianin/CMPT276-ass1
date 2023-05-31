@@ -96,10 +96,10 @@ td{
     font-size: 14px;
     text-align:center;
     height: 2vw;
-    border: 1px solid grey
+    border: 1px solid grey;
 }
   #gradeTable td{
-    padding-top: 0.8vw;
+    padding-top: 0.5em;
   }
 .column{
   /* word-wrap: break-word; */
