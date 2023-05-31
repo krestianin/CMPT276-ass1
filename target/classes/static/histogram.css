@@ -34,7 +34,7 @@ div {
 .wrapper {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    font-size: 14px;
+    font-size: 18px;
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     /* grid-auto-columns: min(200px, auto); */

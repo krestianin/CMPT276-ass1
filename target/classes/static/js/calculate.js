@@ -23,20 +23,20 @@ var grades = [
       var CurGradeCell = lowerBounds[i];
       var NextGradeCell = lowerBounds[i+1];
       console.log(CurGradeCell,NextGradeCell);
-      if(CurGradeCell < NextGradeCell)
+      if(CurGradeCell > 100 || CurGradeCell <= 0)
+      {
+        alert("Invalid grades distribution! Please enter valid numbers.");
+        InputTable.rows[i+1].cells[1].getElementsByTagName('input')[0].style.border = '2px solid rgb(224,67,70)';
+        return;
+      }
+      else if(CurGradeCell < NextGradeCell)
       {
         alert("Invalid grades distribution! Please enter valid numbers.");
         InputTable.rows[i+2].cells[1].getElementsByTagName('input')[0].style.border = '2px solid rgb(224,67,70)';
 
         return;
       }
-      else if(CurGradeCell > 100 || CurGradeCell <= 0)
-      {
-        alert("Invalid grades distribution! Please enter valid numbers.");
-        InputTable.rows[i+1].cells[1].getElementsByTagName('input')[0].style.border = '2px solid rgb(224,67,70)';
 
-        return;
-      }
       else if(lowerBounds[lowerBounds.length-1] < 0 || lowerBounds[lowerBounds.length-1] >100)
       {
         alert("Invalid grades distribution! Please enter valid numbers.");
