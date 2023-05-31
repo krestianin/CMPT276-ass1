@@ -12,7 +12,6 @@ table{
 body { /* This is the CSS for body */
   position: relative;
   min-width: 900px;
-  overflow: hidden;
   height: 100%; 
   max-height: 100%;
   font-family: Cambria, Georgia, "Times New Roman", Times, serif;
@@ -92,12 +91,12 @@ td{
     /* border: 1px solid black */
   }
   input[type="text"] {
+    min-height: fit-content;
     font-family: Cambria, Georgia, "Times New Roman", Times, serif;
     font-size: 14px;
     text-align:center;
     height: 2vw;
     border: 1px solid grey
-
 }
   #gradeTable td{
     padding-top: 0.8vw;
@@ -105,4 +104,5 @@ td{
 .column{
   /* word-wrap: break-word; */
   max-width: 20px;
+  
 }
