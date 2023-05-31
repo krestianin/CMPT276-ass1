@@ -6,7 +6,10 @@
 table{
     border-spacing: 10%;
     margin-left: 10% !important;
+    
     padding-right: 100%;
+    table-layout: fixed;
+
     
 }
 body { /* This is the CSS for body */
@@ -33,7 +36,7 @@ div {
 }
 .wrapper {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     font-size: 18px;
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
@@ -45,21 +48,21 @@ div {
   .one {
     border: solid;
     border-color: white;
-    grid-column: 3 / 5;
+    grid-column: 1 / 3;
     grid-row: 1 / 7;
     background-color: #e9eff1;
   }
   .histogram {
     border: solid;
     border-color: white;
-    grid-column: 5 / 7;
+    grid-column: 3 / 5;
     grid-row: 1 / 5;
     background-color: #e9eff1;
   }
   .three {
     border: solid;
     border-color: white;
-    grid-column: 5 / 7;
+    grid-column: 3 / 5;
     grid-row: 5 / 7;
     background-color: #e9eff1;
   }
@@ -86,7 +89,7 @@ margin-bottom: 1em;
     height: 150%;
   }
 td{
-    padding-right: 8vw;
+    padding-right: 6vw;
     padding-top: 1vw;
     /* border: 1px solid black */
   }
@@ -97,9 +100,11 @@ td{
     text-align:center;
     height: 2vw;
     border: 1px solid grey;
+    
 }
   #gradeTable td{
     padding-top: 0.5em;
+    padding-right: 10vw;
   }
 .column{
   /* word-wrap: break-word; */
